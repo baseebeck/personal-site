@@ -680,7 +680,6 @@ nav {
     display: block;
     padding: 0;
     margin-right: 50px;
-    font-size: 1rem;
   }
 
   .home-icon a {
@@ -690,6 +689,10 @@ nav {
 
   .home-icon a:hover {
     color: var(--yellow);
+  }
+
+  .home-icon i {
+    font-size: 1.5rem;
   }
 
 
