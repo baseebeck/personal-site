@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #2C2131;
+  background: var(--darkpurple);
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -17,24 +17,24 @@ body {
 }
 
 h1 {
-  color: #faed26;
+  color: var(--yellow);
   font-size: 3.5rem;
   margin: 0 auto;
 }
 
 h2 {
-  color: #46344e;
+  color: var(--mdpurple);
   font-size: 1.8rem;
   font-weight: normal;
   margin: 0 auto;
 }
 
 h3, h4 {
-  color: #46344e;
+  color: var(--mdpurple);
 }
 
 /* hr {
-  border: dotted #5680e9 6px;
+  border: dotted var(--mdpurple) 6px;
   border-bottom: none;
   margin: 80px auto;
   width: 4%;
@@ -59,19 +59,19 @@ section {
 }
 
 .light-bg {
-  background-color: #EAEAEB;
+  background-color: var(--lightgray);
 }
 
 .dark-bg {
-  background-color: #D6D5D7;
+  background-color: var(--mdgray);
 }
 
 .light-bg p {
-  color: #2c2131;
+  color: var(--darkpurple);
 }
 
 .dark-bg p{
-  color: #2c2131;
+  color: var(--darkpurple);
 }
 
 .fade-in {
@@ -139,22 +139,9 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #faed26;
+  color: var(--yellow);
   font-weight: bold;
-  border-bottom: 3px solid #faed26;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #faed26;
-  margin: 4px;
-  transition: all 0.3s ease;
+  border-bottom: 3px solid var(--yellow);
 }
 
 .footer-nav {
@@ -177,7 +164,7 @@ nav {
 /* HERO SECTION */
 
 .hero-container {
-  background: #2c2131;
+  background: var(--darkpurple);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,7 +203,7 @@ nav {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #2c2131;
+  background: var(--darkpurple);
   filter: grayscale(100%);
 }
 
@@ -239,7 +226,7 @@ nav {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #2c2131;
+  background: var(--darkpurple);
   filter: grayscale(100%);
 }
 
@@ -255,10 +242,20 @@ nav {
   transition-delay: 0.6s;
 }
 
-.introSubHead {
+.intro-subhead {
   color: #fff;
   font-size: 1rem;
   margin-top: 0.5rem;
+}
+
+.hero-down-arrow {
+  position: absolute;
+  bottom: 50px;
+  z-index: 998;
+}
+
+.hero-down-arrow a {
+  color: var(--mdgray);
 }
 
 
@@ -277,7 +274,7 @@ nav {
 }
 
 .self-procs-container {
-  background: #EAEAEB;
+  background: var(--lightgray);
   border-radius: 5px;
   width: 75%;
   max-width: 550px;
@@ -316,7 +313,7 @@ nav {
 }
 
 .self-procs-item i {
-  color: #46344e;
+  color: var(--mdpurple);
 }
 
 /* SKILLS SECTION */
@@ -340,14 +337,14 @@ nav {
 }
 
 .circle-icon {
-  background: #46344e;
+  background: var(--mdpurple);
   color: #fff;
   padding:50px;
   border-radius: 50%;
 }
 
 .icon-name {
-  color: #faed26;
+  color: var(--yellow);
   font-weight: 600;
   margin: 25.6px 0 12.8px;
 }
@@ -396,9 +393,9 @@ nav {
 
 .btn-alt {
   background-color: transparent;
-  border: solid #2C2131 1px;
+  border: solid var(--darkpurple) 1px;
   border-radius: 12px;
-  color: #2C2131;
+  color: var(--darkpurple);
   cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -410,16 +407,16 @@ nav {
 }
 
 .btn-alt:hover {
-  color: #faed26;
+  color: var(--yellow);
   border: solid #5d4d64 1px;
-  background: #46344e;
+  background: var(--mdpurple);
   text-decoration: none;
 }
 
 
 /* PROJECT SECTION */
 
-.projectSection {
+.project-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,7 +431,7 @@ nav {
   display: none;
 }
 
-.projectTilesWrapper{
+.project-tiles-wrapper{
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -444,7 +441,7 @@ nav {
   padding: 1.5rem;
 }
 
-.flipCard {
+.flipcard {
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -456,7 +453,7 @@ nav {
   perspective: 1000px;
 }
 
-.flipCardInner {
+.flipcard-inner {
   border-radius: 15px;
   position: relative;
   width: 100%;
@@ -466,12 +463,12 @@ nav {
   transform-style: preserve-3d;
 }
 
-.flipCard:hover .flipCardInner {
+.flipcard:hover .flipcard-inner {
   cursor: pointer;
   transform: rotateY(180deg);
 }
 
-.flipCardFront, .flipCardBack {
+.flipcard-front, .flipcard-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -479,24 +476,24 @@ nav {
   backface-visibility: hidden;
 }
 
-.flipCardFront {
-  background-color: #EAEAEB;
+.flipcard-front {
+  background-color: var(--lightgray);
   border-radius: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-.flipCardFront h3 {
-  color: #46344E;
+.flipcard-front h3 {
+  color: var(--mdpurple);
   font-size: 1.4rem;
   margin-top: 50px;
   margin-bottom: 0;
   padding-bottom: 36.5px;
-  border-bottom: 5px solid #46344E;
+  border-bottom: 5px solid var(--mdpurple);
 }
 
-.flipCard-img {
+.flipcard-img {
   width: 300px;
   border-radius: 0 0 15px 15px;
   position: absolute;
@@ -506,8 +503,8 @@ nav {
   backface-visibility: hidden;
 }
 
-.flipCardBack {
-  background-color: #46344E;
+.flipcard-back {
+  background-color: var(--mdpurple);
   border-radius: 15px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 15px 0 rgba(0, 0, 0, 0.1);
@@ -515,7 +512,7 @@ nav {
   transform: rotateY(180deg);
 }
 
-.flipCardBack p {
+.flipcard-back p {
   color: #fff;
   font-size: 1rem;
   line-height: 2;
@@ -525,8 +522,8 @@ nav {
 
 
 .project-btn {
-  background: #46344e;
-  border: solid #faed26 1px;
+  background: var(--mdpurple);
+  border: solid var(--yellow) 1px;
   color: #fff;
   border-radius: 12px;
   cursor: pointer;
@@ -543,19 +540,19 @@ nav {
 }
 
 .project-btn:hover {
-  border: solid #46344e 1px;
-  background: #faed26;
-  color: #46344e;
+  border: solid var(--mdpurple) 1px;
+  background: var(--yellow);
+  color: var(--mdpurple);
   text-decoration: none;
 }
 
-.projectBottomContainer {
+.project-bottom-container {
   padding-top: 30px;
   width: 100%;
 }
 
-.portfolioExpand {
-  color: #46344e;
+.portfolio-expand {
+  color: var(--mdpurple);
   display: block;
   font-size: 1.3rem;
   padding: 10px;
@@ -564,21 +561,21 @@ nav {
   width: 200px;
 }
 
-.portfolioExpand:hover {
-  color: #faed26;
+.portfolio-expand:hover {
+  color: var(--yellow);
   cursor: pointer;
 }
 
-.portfolioExpand p {
+.portfolio-expand p {
   line-height: 0;
   font-size: 1rem;
 }
 
-.downArrow {
+.down-arrow {
   margin-top: 5px;
 }
 
-.upArrow {
+.up-arrow {
   margin-bottom: 20px;
 }
 
@@ -589,16 +586,16 @@ nav {
 
 /* CONTACT SECTION */
 
-.contactMessage {
+.contact-message {
   margin: 1.5rem auto;
   width: 75%;
-  max-width: 550px;
+  max-width: 300px;
 }
 
 .btn {
-  color: #faed26;
+  color: var(--yellow);
   border: solid #5d4d64 1px;
-  background: #46344e;
+  background: var(--mdpurple);
   border-radius: 12px;
   cursor: pointer;
   display: inline-block;
@@ -611,9 +608,9 @@ nav {
 }
 
 .btn:hover {
-  background: #2C2131;
-  border: solid #46344e 1px;
-  color: #EAEAEB;
+  background: var(--darkpurple);
+  border: solid var(--mdpurple) 1px;
+  color: var(--lightgray);
   text-decoration: none;
 }
 
@@ -621,23 +618,23 @@ nav {
 /* FOOTER */
 
 .bottom-container {
-  background: #2C2131;
+  background: var(--darkpurple);
   padding: 50px 0 20px;
 }
 
 .copyright {
-  color: #EAEAEB;
+  color: var(--lightgray);
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;
   padding: 20px 0;
 }
 
 .footer-link {
-  color: #EAEAEB;
+  color: var(--lightgray);
 }
 
 .footer-link:hover {
-  color: #faed26;
+  color: var(--yellow);
 }
 
 .hidden {
@@ -645,7 +642,7 @@ nav {
 }
 
 @media screen and (max-width: 1080px) {
-  .projectTilesWrapper {
+  .project-tiles-wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -705,7 +702,7 @@ nav {
     height: 70px;
     width: 100%;
     padding-top: 10px;
-    background-color: #EAEAEB;
+    background-color: var(--lightgray);
     z-index: 999;
     border-top: 1px solid #C1BFC3;
     -webkit-box-shadow: 0px -2px 4px rgba(50, 50, 50, 0.1);
@@ -725,7 +722,7 @@ nav {
   }
 
   .footer-nav-links a {
-    color: #2c2131;
+    color: var(--darkpurple);
     margin: 0;
     padding: 0;
     display: flex;
@@ -763,7 +760,7 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-  .projectTilesWrapper {
+  .project-tiles-wrapper {
     grid-template-columns: 1fr;
     padding: 1.5rem;
   }
