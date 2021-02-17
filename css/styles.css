@@ -163,7 +163,7 @@ nav {
 }
 
 .home-icon {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   display: none;
   margin: 0;
   padding: 0;
@@ -670,8 +670,8 @@ nav {
 
 @media screen and (max-width: 768px) {
   nav {
-    height: 80px;
-    margin-top: -80px;
+    height: 60px;
+    margin-top: -60px;
   }
   .nav-links {
     display: none;
@@ -700,7 +700,7 @@ nav {
     align-items: center;
     position: fixed;
     bottom: 0;
-    height: 80px;
+    height: 70px;
     width: 100%;
     padding-top: 10px;
     background-color: #EAEAEB;
@@ -718,7 +718,7 @@ nav {
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-    height: 80px;
+    height: 70px;
     width: 80%;
   }
 
@@ -739,7 +739,7 @@ nav {
   }
 
   .bottom-container {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 
   .tech-logos {
@@ -753,6 +753,10 @@ nav {
   .project-mobile-tip {
     display: block;
     margin: 0 auto;
+  }
+
+  #skills, #experience, #resume {
+    padding: 80px 0;
   }
 }
 
