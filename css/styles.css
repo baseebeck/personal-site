@@ -254,7 +254,7 @@ nav {
   z-index: 998;
 }
 
-.hero-down-arrow a {
+.hero-down-arrow i {
   color: var(--mdgray);
 }
 
@@ -692,6 +692,9 @@ nav {
     font-size: 1.5rem;
   }
 
+  .hero-down-arrow {
+    bottom: 100px;
+  }
 
   .footer-nav {
     display: flex;
