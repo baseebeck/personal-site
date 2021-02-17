@@ -175,59 +175,32 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    height: 80px;
+    margin-top: -80px;
+  }
   .nav-links {
     display: none;
-  }
-
-  .logo {
-    /* padding: 30px 0; */
-    font-size: 1.8rem;
   }
 
   .home-icon {
     display: block;
     padding: 0;
     margin-right: 50px;
-    /* padding: 25px 0; */
   }
 
   .home-icon a {
     color: #fff;
+
   }
 
   .home-icon a:hover {
     color: var(--yellow);
   }
 
-  /* body {
-    overflow-x: hidden;
+  .home-icon i {
+    font-size: 1.5rem;
   }
-  .nav-links {
-    position: absolute;
-    right: 0;
-    height: 83vh;
-    top: 50px;
-    background-color: rgba(44,33,49,0.95);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    margin-top: 0;
-    margin-right: 0;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-  }
-  .burger {
-    display: block;
-    margin-right: 50px;
-  } */
 
   .footer-nav {
     display: flex;
@@ -235,9 +208,9 @@ nav {
     align-items: center;
     position: fixed;
     bottom: 0;
-    height: 10%;
+    height: 80px;
     width: 100%;
-    padding-top: 1%;
+    padding-top: 10px;
     background-color: #EAEAEB;
     z-index: 999;
     border-top: 1px solid #C1BFC3;
@@ -251,10 +224,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    margin: 0 10%;
+    margin: 0 auto;
     padding: 0;
-    height: 10%;
-    width: 100%;
+    height: 80px;
+    width: 80%;
   }
 
   .footer-nav-links a {
@@ -268,17 +241,23 @@ nav {
   .footer-nav-links p {
     margin: 0.1rem 0 0;
   }
+
+  .footer-nav-links i {
+    font-size: 1.5rem;
+  }
+
   .bottom-container {
-    margin-bottom: 10%;
+    margin-bottom: 80px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .footer-nav-links {
-    margin: 0 8%;
+    margin: 0 auto;
+    width: 85%;
   }
-  .bottom-container {
-    margin-bottom: 12%;
+  .hero-content h1 {
+    font-size: 3rem;
   }
 }
 
@@ -359,7 +338,7 @@ nav {
 
 .hero-content {
   z-index: 3;
-  max-width: 1200px;
+  max-width: 85%;
   position: absolute;
   top: 35%;
   padding: 0;
