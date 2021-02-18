@@ -42,6 +42,10 @@ const scroll = new SmoothScroll('nav a[href*="#"]', {
   speed: 600
 });
 
+const heroDownArrowScroll = new SmoothScroll('.hero-down-arrow a[href*="#"]', {
+  speed: 1000
+});
+
 const footerScroll = new SmoothScroll('.footer-nav a[href*="#"]', {
   speed: 600
 });
