@@ -258,7 +258,7 @@ nav {
 }
 
 .hero-down-arrow a {
-  color: var(--lightgray);
+  color: var(--pop-color);
 }
 
 .hero-down-arrow a:hover {
@@ -269,6 +269,11 @@ nav {
 .profile-img {
   max-width: 150px;
   padding-top: 1rem;
+  filter: grayscale(100%);
+}
+
+.profile-img:hover {
+  filter: grayscale(0%);
 }
 
 .intro {
