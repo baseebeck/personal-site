@@ -40,7 +40,6 @@ h3, h4 {
   margin: 80px auto;
   width: 4%;
 } */
-
 p {
   line-height: 2;
   font-size: 0.8rem;
@@ -84,14 +83,12 @@ section {
   opacity: 1;
 }
 
-
 /* NAVBAR */
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(19,21,59,0);
+  background-color: rgba(19, 21, 59, 0);
   height: 50px;
   margin-top: -50px;
   position: sticky;
@@ -149,13 +146,11 @@ nav {
 }
 
 .nav-alt {
-  background: rgba(19,21,59,1);
+  background: rgba(19, 21, 59, 1);
   transition: opacity 0.3s ease-in;
 }
 
-
 /* HERO SECTION */
-
 .hero-container {
   background: var(--darkblue);
   display: flex;
@@ -174,8 +169,8 @@ nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(19,21,59,0.9) 10%, rgba(19,21,59,0.8) 100%),
-  linear-gradient(180deg, rgba(19,21,59,0.9) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(19, 21, 59, 0.9) 10%, rgba(19, 21, 59, 0.8) 100%),
+    linear-gradient(180deg, rgba(19, 21, 59, 0.9) 0%, transparent 100%);
   z-index: 3;
 }
 
@@ -201,7 +196,6 @@ nav {
 }
 
 /* ALT HERO BG IMAGE */
-
 .hero-bg-img {
   position: absolute;
   top: 0;
@@ -241,10 +235,7 @@ nav {
   margin-top: 0.5rem;
 }
 
-
-
 /* ABOUT ME SECTION */
-
 #about-me {
   position: relative;
 }
@@ -290,9 +281,9 @@ nav {
   max-width: 550px;
   margin: 20px auto;
   padding: 1rem;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .self-procs-container h3 {
@@ -327,7 +318,6 @@ nav {
 }
 
 /* SKILLS SECTION */
-
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -349,7 +339,7 @@ nav {
 .circle-icon {
   background: var(--mdpurple);
   color: #fff;
-  padding:50px;
+  padding: 50px;
   border-radius: 50%;
 }
 
@@ -360,7 +350,6 @@ nav {
 }
 
 /* EXPERIENCE SECTION */
-
 .tech-logos-container {
   width: 75%;
   max-width: 650px;
@@ -398,9 +387,7 @@ nav {
   filter: grayscale(0%);
 }
 
-
 /* RESUME SECTION */
-
 .btn-alt {
   background-color: transparent;
   border: solid var(--mdpurple) 1px;
@@ -423,9 +410,7 @@ nav {
   text-decoration: none;
 }
 
-
 /* PROJECT SECTION */
-
 .project-section {
   display: flex;
   flex-direction: column;
@@ -441,7 +426,7 @@ nav {
   display: none;
 }
 
-.project-tiles-wrapper{
+.project-tiles-wrapper {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -482,7 +467,8 @@ nav {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -509,7 +495,8 @@ nav {
   position: absolute;
   left: 0;
   bottom: 0;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -530,7 +517,6 @@ nav {
   text-align: center;
 }
 
-
 .project-btn {
   background: var(--darkblue);
   border: solid var(--pop-color) 1px;
@@ -539,17 +525,42 @@ nav {
   cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-top: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   position: absolute;
-  bottom: 13%;
-  left: 14%;
+  bottom: 23%;
+  left: 18%;
 }
 
 .project-btn:hover {
+  border: solid #30C2BC 1px;
+  background: var(--pop-color);
+  color: var(--darkblue);
+  text-decoration: none;
+}
+
+.project-btn2 {
+  background: var(--darkblue);
+  border: solid var(--pop-color) 1px;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 8%;
+  left: 18%;
+}
+
+.project-btn2:hover {
   border: solid #30C2BC 1px;
   background: var(--pop-color);
   color: var(--darkblue);
@@ -589,13 +600,8 @@ nav {
   margin-bottom: 20px;
 }
 
-
-
 /* END OF PROJECT SECTION */
-
-
 /* CONTACT SECTION */
-
 .contact-message {
   margin: 1.5rem auto;
   width: 75%;
@@ -624,9 +630,7 @@ nav {
   text-decoration: none;
 }
 
-
 /* FOOTER */
-
 .bottom-container {
   background: var(--darkblue);
   padding: 50px 0 20px;
@@ -657,7 +661,6 @@ nav {
   }
 }
 
-
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
@@ -669,6 +672,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     width: 80%;
   }
+
   .circle-icon {
     padding: 40px;
   }
@@ -679,6 +683,7 @@ nav {
     height: 60px;
     margin-top: -60px;
   }
+
   .nav-links {
     display: none;
   }
@@ -691,7 +696,6 @@ nav {
 
   .home-icon a {
     color: #fff;
-
   }
 
   .home-icon a:hover {
@@ -787,6 +791,7 @@ nav {
     margin: 0 auto;
     width: 90%;
   }
+
   .tech-logos img {
     width: 40px;
   }
@@ -802,6 +807,7 @@ nav {
     margin: 0 auto;
     width: 85%;
   }
+
   .hero-content h1 {
     font-size: 3rem;
   }
