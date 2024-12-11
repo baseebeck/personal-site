@@ -1,341 +1,485 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Ben Seebeck</title>
+    <link rel="stylesheet" href="css/styles.css" />
 
-<head>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Ben Seebeck</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/67b4a9aeb2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/67b4a9aeb2.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-  <nav class="fade-in" onscroll="scrollNav">
-    <div class="logo">
-      <a href="#home">
-        <h4>BS</h4>
-      </a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#resume">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="home-icon">
-      <a href="#home"><i class="fas fa-home"></i></a>
-    </div>
-  </nav>
-
-
-  <div class="footer-nav">
-    <ul class="footer-nav-links">
-      <li>
-        <a href="#skills">
-          <i class="fas fa-code"></i>
-          <p>Skills</p>
+  <body>
+    <nav class="fade-in" onscroll="scrollNav">
+      <div class="logo">
+        <a href="#home">
+          <h4>BS</h4>
         </a>
-      </li>
-      <li>
-        <a href="#experience">
-          <i class="fas fa-list"></i>
-          <p>Experience</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#resume">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="home-icon">
+        <a href="#home"><i class="fas fa-home"></i></a>
+      </div>
+    </nav>
+
+    <div class="footer-nav">
+      <ul class="footer-nav-links">
+        <li>
+          <a href="#skills">
+            <i class="fas fa-code"></i>
+            <p>Skills</p>
+          </a>
+        </li>
+        <li>
+          <a href="#experience">
+            <i class="fas fa-list"></i>
+            <p>Experience</p>
+          </a>
+        </li>
+        <li>
+          <a href="#resume">
+            <i class="far fa-folder-open"></i>
+            <p>Portfolio</p>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="far fa-envelope"></i>
+            <p>Contact</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <section id="home" class="hero-container">
+      <div class="hero-bg">
+        <video autoplay loop muted playsinline class="hero-video">
+          <source src="videos/salt.mp4" />
+        </video>
+      </div>
+      <div class="hero-bg-img">
+        <img
+          class="hero-img"
+          src="images/waterfall-still.png"
+          alt="waterfall"
+        />
+      </div>
+      <div class="hero-content fade-in">
+        <h1>Hi, I'm Ben</h1>
+        <p class="intro-subhead">Front-end Developer & UX Enthusiast</p>
+      </div>
+    </section>
+
+    <section id="about-me" class="dark-bg">
+      <div class="hero-down-arrow">
+        <a href="#about-me"><i class="fas fa-chevron-down fa-2x"></i></a>
+      </div>
+
+      <div class="profile fade-in">
+        <h2>A little bit about me</h2>
+        <a
+          href="https://www.linkedin.com/in/ben-seebeck-5117a658/"
+          target="_blank"
+        >
+          <img
+            class="profile-img"
+            src="images/benProfileCircleSm.png"
+            alt="ben profile image"
+          />
         </a>
-      </li>
-      <li>
-        <a href="#resume">
-          <i class="far fa-folder-open"></i>
-          <p>Portfolio</p>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <i class="far fa-envelope"></i>
-          <p>Contact</p>
-        </a>
-      </li>
-    </ul>
-  </div>
+        <p class="intro">
+          I'm a former marketing professional turned self-taught software
+          developer with a passion for front-end development and design. My
+          introduction to code came in 2017, building marketing emails with HTML
+          and CSS. That quickly became the most fulfilling part of my job, and I
+          started my first official coding class in 2018.
+        </p>
+        <p class="intro">
+          When I'm not on the computer, I enjoy playing/watching sports,
+          discovering new restaurants and traveling.
+        </p>
+        <div class="self-procs-container">
+          <h3>TL;DR? Self Proclamations:</h3>
+          <div class="self-procs-items">
+            <div class="self-procs-item">
+              <i class="fas fa-laptop-code fa-2x"></i>
+              <p>Web Developer</p>
+            </div>
+            <div class="self-procs-item">
+              <i class="fas fa-paint-brush fa-2x"></i>
+              <p>UX Enthusiast</p>
+            </div>
+            <div class="self-procs-item">
+              <i class="fas fa-pizza-slice fa-2x"></i>
+              <p>Restaurant Critic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="skills" class="light-bg">
+      <h2>What I do</h2>
+      <div class="skills-container">
+        <div class="skills-item fade-in wid1">
+          <i class="fas fa-tools fa-3x circle-icon"></i>
+          <p class="icon-name">DEVELOP</p>
+          <p>
+            I am passionate about front-end development and design. As I grow as
+            a developer, I aim to write clean, readable code that can be used by
+            others and leveraged to create captivating and enjoyable user
+            experiences on the web.
+          </p>
+        </div>
+        <div class="skills-item fade-in wid2">
+          <i class="fas fa-palette fa-3x circle-icon"></i>
+          <p class="icon-name">DESIGN</p>
+          <p>
+            Design isn't just what a product looks like and feels like on the
+            outside. It encompasses the internal functionality and overall user
+            experience. I strive to design interfaces and experiences that are
+            easy to consume and function smoothly.
+          </p>
+        </div>
+        <div class="skills-item fade-in wid3">
+          <i class="fas fa-users-cog fa-3x circle-icon"></i>
+          <p class="icon-name">COLLABORATE</p>
+          <p>
+            Throughout my career, I have always made it a priority to work
+            closely with representatives from every area of the business to
+            understand the needs of our audience to ensure we deliver meaningful
+            and engaging experiences.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <section id="home" class="hero-container">
-    <div class="hero-bg">
-      <video autoplay loop muted playsinline class="hero-video">
-        <source src="videos/salt.mp4" />
-      </video>
-    </div>
-    <div class="hero-bg-img">
-      <img class="hero-img" src="images/waterfall-still.png" alt="waterfall">
-    </div>
-    <div class="hero-content fade-in">
-      <h1>Hi, I'm Ben</h1>
-      <p class="intro-subhead">Front-end Developer & UX Enthusiast</p>
-    </div>
+    <section id="experience" class="dark-bg">
+      <div class="exp-container fade-in">
+        <h2>Experience</h2>
+        <p class="intro">
+          I've been writing software for several years with a focus on front-end
+          development. I'm excited to continue growing in this fast-paced
+          industry.
+        </p>
+        <div class="tech-logos-container">
+          <h4>Some technologies I've worked with:</h4>
+          <div class="tech-logos">
+            <div class="tech-logo">
+              <img src="images/tech-icons/html_logo.png" alt="html" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/css_logo.png" alt="css" />
+            </div>
+            <div class="tech-logo">
+              <img
+                src="images/tech-icons/javascript_logo.png"
+                alt="javascript"
+              />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/wordpress_logo.png" alt="wordpress" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/drupal_logo.png" alt="drupal" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/php_logo.png" alt="php" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/git_logo.png" alt="git" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/github_logo.png" alt="github" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/python_logo.png" alt="python" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/photoshop_logo.png" alt="photoshop" />
+            </div>
+            <div class="tech-logo">
+              <img src="images/tech-icons/premiere_logo.png" alt="premiere" />
+            </div>
+            <div class="tech-logo">
+              <img
+                src="images/tech-icons/illustrator_logo.png"
+                alt="illustrator"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
+    <section id="resume" class="light-bg">
+      <h2>Check out my resume</h2>
+      <a
+        class="btn-alt"
+        href="files/BenSeebeckResume.pdf"
+        download
+        target="_blank"
+        >GRAB A COPY</a
+      >
+    </section>
 
+    <section id="portfolio" class="project-section dark-bg">
+      <h2 class="project-pg-title">Project Portfolio</h2>
+      <p class="project-mobile-tip">(Tap project tile for more info)</p>
 
-  <section id="about-me" class="dark-bg">
-    <div class="hero-down-arrow">
-      <a href="#about-me"><i class="fas fa-chevron-down fa-2x"></i></a>
-    </div>
+      <div class="project-tiles-wrapper fade-in">
+        <!-- CARD 1 -->
+        <div class="flipcard">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/dp-site-screenshot.jpg"
+                alt="duke dialogue project"
+              />
+              <h3>Duke Dialogue Project</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>PHP<br />CSS<br />WordPress</p>
+              <a
+                class="project-btn"
+                href="https://dialogueproject.fuqua.duke.edu"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- CARD 2 -->
+        <div class="flipcard">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/duke-adm-events.jpg"
+                alt="wish list app"
+              />
+              <h3>Duke Events</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>React<br />Next.js<br />CSS<br />Drupal</p>
+              <a
+                class="project-btn"
+                href="https://www.fuqua.duke.edu/alumni/connect/events"
+                target="_blank"
+                rel="noreferrer"
+                >Alumni Events</a
+              >
+              <a
+                class="project-btn2"
+                href="https://www.fuqua.duke.edu/meet/events/campus-visits"
+                target="_blank"
+                rel="noreferrer"
+                >General Events</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- CARD 3 -->
+        <div class="flipcard">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/personal-site-img.png"
+                alt="personal site"
+              />
+              <h3>Personal Portfolio</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>Javascript<br />HTML<br />CSS</p>
+              <a
+                class="project-btn"
+                href="https://github.com/baseebeck/personal-site"
+                target="_blank"
+                rel="noreferrer"
+                >SOURCE CODE</a
+              >
+              <a
+                class="project-btn2"
+                href="https://baseebeck.github.io/personal-site/"
+                target="_blank"
+                >VIEW PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
 
-    <div class="profile fade-in">
-      <h2>A little bit about me</h2>
-      <a href="https://www.linkedin.com/in/ben-seebeck-5117a658/" target="_blank">
-        <img class="profile-img" src="images/benProfileCircleSm.png" alt="ben profile image">
-      </a>
-      <p class="intro">I'm a former marketing professional turned self-taught software developer with a passion for front-end development and design.
-        My introduction to code came in 2017, building marketing emails with HTML and CSS.
-        That quickly became the most fulfilling part of my job, and I started my first official coding class in 2018.
+        <!-- CARD 4 -->
+        <div id="card4" class="flipcard card2 hidden">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/slist.png"
+                alt="wish list app"
+              />
+              <h3>Seebeck's List</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>HTML<br />CSS</p>
+              <a
+                class="project-btn"
+                href="https://github.com/baseebeck/seebecks-list"
+                target="_blank"
+                rel="noreferrer"
+                >SOURCE CODE</a
+              >
+              <a
+                class="project-btn2"
+                href="https://baseebeck.github.io/seebecks-list/"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- CARD 5 -->
+        <div id="card5" class="flipcard card2 hidden">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/kabi.png"
+                alt="business website"
+              />
+              <h3>Business Website</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>HTML<br />CSS<br />Bootstrap</p>
+              <a
+                class="project-btn"
+                href="https://github.com/baseebeck/kabi-creations"
+                target="_blank"
+                rel="noreferrer"
+                >SOURCE CODE</a
+              >
+              <a
+                class="project-btn2"
+                href="https://baseebeck.github.io/kabi-creations/"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- CARD 6 -->
+        <div id="card6" class="flipcard hidden">
+          <div class="flipcard-inner">
+            <div class="flipcard-front" onclick="">
+              <img
+                class="flipcard-img"
+                src="images/wish-list.jpg"
+                alt="seebeck's list"
+              />
+              <h3>Wish List App</h3>
+            </div>
+            <div class="flipcard-back">
+              <p>
+                HTML | CSS<br />Javascript | EJS<br />Express | Node.js<br />MongoDB
+              </p>
+              <a
+                class="project-btn"
+                href="https://github.com/baseebeck/wish-list"
+                target="_blank"
+                rel="noreferrer"
+                >SOURCE CODE</a
+              >
+              <a
+                class="project-btn2"
+                href="https://radiant-shore-52560.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                >VIEW PROJECT</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of project tiles wrapper -->
+
+      <div class="project-bottom-container">
+        <div class="portfolio-expand">
+          <div class="up-arrow hidden">
+            <i class="hidden fas fa-chevron-up fa-2x"></i>
+          </div>
+          <p id="expand-text">MORE PROJECTS</p>
+          <div class="down-arrow">
+            <i class="fas fa-chevron-down fa-2x down-arrow"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="light-bg">
+      <h2>Get In Touch</h2>
+      <p class="contact-message">
+        If you need a passionate front-end developer or a restaurant
+        recommendation.
       </p>
-      <p class="intro">
-        When I'm not on the computer, I enjoy playing/watching sports, discovering new restaurants and traveling.
+      <a class="btn" href="mailto:baseebeck@gmail.com">CONTACT ME</a>
+    </section>
+
+    <section class="bottom-container">
+      <a class="footer-link" href="https://github.com/baseebeck" target="_blank"
+        ><i class="fab fa-github fa-2x"></i
+      ></a>
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/ben-seebeck/"
+        target="_blank"
+        ><i class="fab fa-linkedin-in fa-2x"></i
+      ></a>
+      <a
+        class="footer-link"
+        href="https://twitter.com/BenSeebeck"
+        target="_blank"
+        ><i class="fab fa-twitter fa-2x"></i
+      ></a>
+      <p class="copyright">
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Ben Seebeck
       </p>
-      <div class="self-procs-container">
-        <h3> TL;DR? Self Proclamations:</h3>
-        <div class="self-procs-items">
-          <div class="self-procs-item">
-            <i class="fas fa-laptop-code fa-2x"></i>
-            <p>Web Developer</p>
-          </div>
-          <div class="self-procs-item">
-            <i class="fas fa-paint-brush fa-2x"></i>
-            <p>UX Enthusiast</p>
-          </div>
-          <div class="self-procs-item">
-            <i class="fas fa-pizza-slice fa-2x"></i>
-            <p>Restaurant Critic</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-
-  <section id="skills" class="light-bg">
-    <h2>What I do</h2>
-    <div class="skills-container">
-      <div class="skills-item fade-in wid1">
-        <i class="fas fa-tools fa-3x circle-icon"></i>
-        <p class="icon-name">DEVELOP</p>
-        <p>I am passionate about front-end development and design.
-          As I grow as a developer, I aim to write clean, readable code that can
-          be used by others and leveraged to create captivating and enjoyable user experiences on the web.</p>
-      </div>
-      <div class="skills-item fade-in wid2">
-        <i class="fas fa-palette fa-3x circle-icon"></i>
-        <p class="icon-name">DESIGN</p>
-        <p>Design isn't just what a product looks like and feels like on the outside.
-          It encompasses the internal functionality and overall user experience.
-          I strive to design interfaces and experiences that are easy to consume and function smoothly.</p>
-      </div>
-      <div class="skills-item fade-in wid3">
-        <i class="fas fa-users-cog fa-3x circle-icon"></i>
-        <p class="icon-name">COLLABORATE</p>
-        <p>Throughout my career, I have always made it a priority to work closely with
-          representatives from every area of the business to understand the needs of our
-          audience to ensure we deliver meaningful and engaging experiences.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="experience" class="dark-bg">
-    <div class="exp-container fade-in">
-
-      <h2>Experience</h2>
-      <p class="intro">I've been writing software for several years with a focus on front-end development.
-        I'm excited to continue growing in this fast-paced industry.</p>
-      <div class="tech-logos-container">
-        <h4>Some technologies I've worked with:</h4>
-        <div class="tech-logos">
-          <div class="tech-logo">
-            <img src="images/tech-icons/html_logo.png" alt="html" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/css_logo.png" alt="css" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/javascript_logo.png" alt="javascript" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/wordpress_logo.png" alt="wordpress" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/drupal_logo.png" alt="drupal" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/php_logo.png" alt="php" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/git_logo.png" alt="git" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/github_logo.png" alt="github" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/python_logo.png" alt="python" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/photoshop_logo.png" alt="photoshop" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/premiere_logo.png" alt="premiere" />
-          </div>
-          <div class="tech-logo">
-            <img src="images/tech-icons/illustrator_logo.png" alt="illustrator" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="resume" class="light-bg">
-    <h2>Check out my resume</h2>
-    <a class="btn-alt" href="files/BenSeebeckResume.pdf" download target="_blank">GRAB A COPY</a>
-  </section>
-
-
-  <section id="portfolio" class="project-section dark-bg">
-    <h2 class="project-pg-title">Project Portfolio</h2>
-    <p class="project-mobile-tip">(Tap project tile for more info)</p>
-
-    <div class="project-tiles-wrapper fade-in">
-
-      <!-- CARD 1 -->
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/dp-site-screenshot.jpg" alt="duke dialogue project" />
-            <h3>Duke Dialogue Project</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>PHP<br>CSS<br>WordPress</p>
-            <a class="project-btn" href="https://dialogueproject.fuqua.duke.edu" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <!-- CARD 2 -->
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/slist.png" alt="wish list app" />
-            <h3>Seebeck's List</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>HTML<br>CSS</p>
-            <a class="project-btn" href="https://github.com/baseebeck/seebecks-list" target="_blank">SOURCE CODE</a>
-            <a class="project-btn2" href="https://baseebeck.github.io/seebecks-list/" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <!-- CARD 3 -->
-      <div class="flipcard">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/personal-site-img.png" alt="personal site" />
-            <h3>Personal Portfolio</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>Javascript<br />HTML<br>CSS</p>
-            <a class="project-btn" href="https://github.com/baseebeck/personal-site" target="_blank">SOURCE CODE</a>
-            <a class="project-btn2" href="https://baseebeck.github.io/personal-site/" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- CARD 4 -->
-      <div class="flipcard card4 hidden">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/clock.png" alt="interactive clock" />
-            <h3>Interactive Clock</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>Javascript<br />HTML<br>CSS</p>
-            <a class="project-btn" href="https://github.com/baseebeck/digital-clock" target="_blank">SOURCE CODE</a>
-            <a class="project-btn2" href="https://baseebeck.github.io/digital-clock/" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <!-- CARD 5 -->
-      <div class="flipcard card5 hidden">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/kabi.png" alt="business website" />
-            <h3>Business Website</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>HTML<br>CSS<br>Bootstrap</p>
-            <a class="project-btn" href="https://github.com/baseebeck/kabi-creations" target="_blank">SOURCE CODE</a>
-            <a class="project-btn2" href="https://baseebeck.github.io/kabi-creations/" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-      <!-- CARD 6 -->
-      <div class="flipcard card6 hidden">
-        <div class="flipcard-inner">
-          <div class="flipcard-front" onclick="">
-            <img class="flipcard-img" src="images/wish-list.jpg" alt="seebeck's list" />
-            <h3>Wish List App</h3>
-          </div>
-          <div class="flipcard-back">
-            <p>HTML | CSS<br>Javascript | EJS<br>Express | Node.js<br>MongoDB</p>
-            <a class="project-btn" href="https://github.com/baseebeck/wish-list" target="_blank">SOURCE CODE</a>
-            <a class="project-btn2" href="https://radiant-shore-52560.herokuapp.com/" target="_blank">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- End of project tiles wrapper -->
-
-    <div class="project-bottom-container">
-      <div class="portfolio-expand">
-        <div class="up-arrow hidden"><i class="hidden fas fa-chevron-up fa-2x"></i></div>
-        <p id="expand-text">MORE PROJECTS</p>
-        <div class="down-arrow"><i class="fas fa-chevron-down fa-2x down-arrow"></i></div>
-      </div>
-    </div>
-
-  </section>
-
-  <section id="contact" class="light-bg">
-    <h2>Get In Touch</h2>
-    <p class="contact-message">If you need a passionate front-end developer or a restaurant recommendation.</p>
-    <a class="btn" href="mailto:baseebeck@gmail.com">CONTACT ME</a>
-  </section>
-
-
-  <section class="bottom-container">
-    <a class="footer-link" href="https://github.com/baseebeck" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-    <a class="footer-link" href="https://www.linkedin.com/in/ben-seebeck/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-    <a class="footer-link" href="https://twitter.com/BenSeebeck" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-    <p class="copyright">© <script>
-        document.write(new Date().getFullYear());
-      </script> Ben Seebeck</p>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
 </html>

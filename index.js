@@ -1,61 +1,62 @@
 //FADE IN
-const faders = document.querySelectorAll('.fade-in');
+const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -180px 0px"
+  rootMargin: "0px 0px -180px 0px",
 };
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-  entries.forEach(entry => {
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
-      entry.target.classList.add('appear');
+      entry.target.classList.add("appear");
       appearOnScroll.unobserve(entry.target);
-
     }
   });
-}, appearOptions);
+},
+appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-
 // NAV BACKGROUND CHANGE
-window.onscroll = function() {
-  scrollNav()
+window.onscroll = function () {
+  scrollNav();
 };
 
 function scrollNav() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector('nav').className = "nav-alt";
+    document.querySelector("nav").className = "nav-alt";
   } else {
-    document.querySelector('nav').className = "";
+    document.querySelector("nav").className = "";
   }
 }
 
 // SMOOTHSCROLL
 
 const scroll = new SmoothScroll('nav a[href*="#"]', {
-  speed: 600
+  speed: 600,
 });
 
 const heroDownArrowScroll = new SmoothScroll('.hero-down-arrow a[href*="#"]', {
-  speed: 1000
+  speed: 1000,
 });
 
 const footerScroll = new SmoothScroll('.footer-nav a[href*="#"]', {
-  speed: 600
+  speed: 600,
 });
-
 
 // PORTFOLIO EXPAND
 function expand() {
-  let card4 = document.querySelector(".card4");
-  let card5 = document.querySelector(".card5");
-  let card6 = document.querySelector(".card6");
+  let card4 = document.getElementById("card4");
+  let card5 = document.getElementById("card5");
+  let card6 = document.getElementById("card6");
   let expandText = document.querySelector("#expand-text");
   let downArrow = document.querySelector(".down-arrow");
   let upArrow = document.querySelector(".up-arrow");
@@ -77,6 +78,6 @@ function expand() {
   }
 }
 
-document.querySelector(".portfolio-expand").onclick = function() {
+document.querySelector(".portfolio-expand").onclick = function () {
   expand();
-}
+};
