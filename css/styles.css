@@ -278,7 +278,7 @@ nav {
 }
 
 .self-procs-container {
-  background: var(--lightgray);
+  background: var(--mdgray);
   border-radius: 5px;
   width: 75%;
   max-width: 550px;
